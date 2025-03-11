@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_feb28ce240298780bf6f100202899416 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_feb28ce240298780bf6f100202899416" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_feb28ce240298780bf6f100202899416 = L.map(
+                "map_feb28ce240298780bf6f100202899416",
+                {
+                    center: [40.6473, -96.67969],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4ef5209ec9ef6ffe9f9e79aaf8cbf74b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4ef5209ec9ef6ffe9f9e79aaf8cbf74b.addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var mouse_position_1fc36b2c9e1bb3d470a91f8a30255bf7 = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_1fc36b2c9e1bb3d470a91f8a30255bf7.options["latFormatter"] =
+                undefined;
+            mouse_position_1fc36b2c9e1bb3d470a91f8a30255bf7.options["lngFormatter"] =
+                undefined;
+            map_feb28ce240298780bf6f100202899416.addControl(mouse_position_1fc36b2c9e1bb3d470a91f8a30255bf7);
+        
+    
+            var marker_d893223dc35d77c1e086c6602c599047 = L.marker(
+                [42.3601, -71.0589],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_7d1784eca8d2a7824189d1b19786c21f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26a1d22e84811a9032a6cd46ce731251 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b921a8b5fafaf508e9d56487ad4514b3 = $(`<div id="html_b921a8b5fafaf508e9d56487ad4514b3" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Boston</div>`)[0];
+                popup_26a1d22e84811a9032a6cd46ce731251.setContent(html_b921a8b5fafaf508e9d56487ad4514b3);
+            
+        
+
+        marker_d893223dc35d77c1e086c6602c599047.bindPopup(popup_26a1d22e84811a9032a6cd46ce731251)
+        ;
+
+        
+    
+    
+                marker_d893223dc35d77c1e086c6602c599047.setIcon(icon_7d1784eca8d2a7824189d1b19786c21f);
+            
+    
+            var marker_3dbb9d8f8a61f2bbf5b67747c5a389e4 = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_e2afe09977181518f028c05aefafbe66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d982a43335730de1afb43b6b388f551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bd9106e237b3036e427fef6f715e779 = $(`<div id="html_6bd9106e237b3036e427fef6f715e779" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of New York</div>`)[0];
+                popup_7d982a43335730de1afb43b6b388f551.setContent(html_6bd9106e237b3036e427fef6f715e779);
+            
+        
+
+        marker_3dbb9d8f8a61f2bbf5b67747c5a389e4.bindPopup(popup_7d982a43335730de1afb43b6b388f551)
+        ;
+
+        
+    
+    
+                marker_3dbb9d8f8a61f2bbf5b67747c5a389e4.setIcon(icon_e2afe09977181518f028c05aefafbe66);
+            
+    
+            var marker_591a4342bb0949c971bb4998d19fb051 = L.marker(
+                [39.9526, -75.1652],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_91812561359269b589db804d7226d0fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c4e34edf91f6c7b4cbb0d205636361c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_056d0b8d3a3ebb7589135dc5d143a0b8 = $(`<div id="html_056d0b8d3a3ebb7589135dc5d143a0b8" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Philadelphia</div>`)[0];
+                popup_3c4e34edf91f6c7b4cbb0d205636361c.setContent(html_056d0b8d3a3ebb7589135dc5d143a0b8);
+            
+        
+
+        marker_591a4342bb0949c971bb4998d19fb051.bindPopup(popup_3c4e34edf91f6c7b4cbb0d205636361c)
+        ;
+
+        
+    
+    
+                marker_591a4342bb0949c971bb4998d19fb051.setIcon(icon_91812561359269b589db804d7226d0fb);
+            
+    
+            var marker_74d5790af8d5669fe8e5f564ab67782a = L.marker(
+                [41.4993, -81.6944],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_5a5479beb45640140811ec20eb9a7896 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecf7c54b09fb0a9907b673e2bd46ee8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_976981a9bffbf6daceeaf29798ec6bce = $(`<div id="html_976981a9bffbf6daceeaf29798ec6bce" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Cleveland</div>`)[0];
+                popup_ecf7c54b09fb0a9907b673e2bd46ee8f.setContent(html_976981a9bffbf6daceeaf29798ec6bce);
+            
+        
+
+        marker_74d5790af8d5669fe8e5f564ab67782a.bindPopup(popup_ecf7c54b09fb0a9907b673e2bd46ee8f)
+        ;
+
+        
+    
+    
+                marker_74d5790af8d5669fe8e5f564ab67782a.setIcon(icon_5a5479beb45640140811ec20eb9a7896);
+            
+    
+            var marker_e513aa9cb541e58f819f17a8a338fd25 = L.marker(
+                [37.5407, -77.436],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_963e309c7e19687c5c63cc06b871c736 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ffda2b28102e45c41e4173c90696501 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a671bca53034d80444d625e660daf109 = $(`<div id="html_a671bca53034d80444d625e660daf109" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Richmond</div>`)[0];
+                popup_7ffda2b28102e45c41e4173c90696501.setContent(html_a671bca53034d80444d625e660daf109);
+            
+        
+
+        marker_e513aa9cb541e58f819f17a8a338fd25.bindPopup(popup_7ffda2b28102e45c41e4173c90696501)
+        ;
+
+        
+    
+    
+                marker_e513aa9cb541e58f819f17a8a338fd25.setIcon(icon_963e309c7e19687c5c63cc06b871c736);
+            
+    
+            var marker_051ea5b1787d00bac2d648b41f908d26 = L.marker(
+                [33.749, -84.388],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_b6f3c2f499558829702509e5861d352e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0558b7ee16cfd5d4ac26aa0d2b89fcc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eee1b69c05611bb894f5247259e36ae9 = $(`<div id="html_eee1b69c05611bb894f5247259e36ae9" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Atlanta</div>`)[0];
+                popup_0558b7ee16cfd5d4ac26aa0d2b89fcc5.setContent(html_eee1b69c05611bb894f5247259e36ae9);
+            
+        
+
+        marker_051ea5b1787d00bac2d648b41f908d26.bindPopup(popup_0558b7ee16cfd5d4ac26aa0d2b89fcc5)
+        ;
+
+        
+    
+    
+                marker_051ea5b1787d00bac2d648b41f908d26.setIcon(icon_b6f3c2f499558829702509e5861d352e);
+            
+    
+            var marker_e323dca94319947acdea42132442d0f4 = L.marker(
+                [41.8781, -87.6298],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_09cc42c2ac535a75d3c0b71f7340a9a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09c1b0d52c0d2f71c1b0b33e6a646c47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2a596978595353a530a864b8ac6ff1a = $(`<div id="html_b2a596978595353a530a864b8ac6ff1a" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Chicago</div>`)[0];
+                popup_09c1b0d52c0d2f71c1b0b33e6a646c47.setContent(html_b2a596978595353a530a864b8ac6ff1a);
+            
+        
+
+        marker_e323dca94319947acdea42132442d0f4.bindPopup(popup_09c1b0d52c0d2f71c1b0b33e6a646c47)
+        ;
+
+        
+    
+    
+                marker_e323dca94319947acdea42132442d0f4.setIcon(icon_09cc42c2ac535a75d3c0b71f7340a9a5);
+            
+    
+            var marker_72ee09f543843e80fce6e2c8eee5e0ae = L.marker(
+                [38.627, -90.1994],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_8a983f6719d6353885f097b80ecdf32e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c37d8791e86fe14ffb70638e791ad5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b62d55a40602c6972990eae06aae180c = $(`<div id="html_b62d55a40602c6972990eae06aae180c" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of St. Louis</div>`)[0];
+                popup_1c37d8791e86fe14ffb70638e791ad5b.setContent(html_b62d55a40602c6972990eae06aae180c);
+            
+        
+
+        marker_72ee09f543843e80fce6e2c8eee5e0ae.bindPopup(popup_1c37d8791e86fe14ffb70638e791ad5b)
+        ;
+
+        
+    
+    
+                marker_72ee09f543843e80fce6e2c8eee5e0ae.setIcon(icon_8a983f6719d6353885f097b80ecdf32e);
+            
+    
+            var marker_f64399f71da49d707f4fd605dfe0906a = L.marker(
+                [44.9778, -93.265],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_f26c1de8dfe97eec5ea41e66aec6faa4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bf4be47123151010eb1239cab30b146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fc99a388bf484cd7c54b138c8fd26e1 = $(`<div id="html_5fc99a388bf484cd7c54b138c8fd26e1" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Minneapolis</div>`)[0];
+                popup_3bf4be47123151010eb1239cab30b146.setContent(html_5fc99a388bf484cd7c54b138c8fd26e1);
+            
+        
+
+        marker_f64399f71da49d707f4fd605dfe0906a.bindPopup(popup_3bf4be47123151010eb1239cab30b146)
+        ;
+
+        
+    
+    
+                marker_f64399f71da49d707f4fd605dfe0906a.setIcon(icon_f26c1de8dfe97eec5ea41e66aec6faa4);
+            
+    
+            var marker_686dfd8c3b0f30491ff98c4062d57609 = L.marker(
+                [39.0997, -94.5786],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_71e93ac080a45dfce577cba1721dd0ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e34a0af17da39c57a0ddbfa4c2460112 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe3d77835f192ecd555df06ee1831d51 = $(`<div id="html_fe3d77835f192ecd555df06ee1831d51" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Kansas City</div>`)[0];
+                popup_e34a0af17da39c57a0ddbfa4c2460112.setContent(html_fe3d77835f192ecd555df06ee1831d51);
+            
+        
+
+        marker_686dfd8c3b0f30491ff98c4062d57609.bindPopup(popup_e34a0af17da39c57a0ddbfa4c2460112)
+        ;
+
+        
+    
+    
+                marker_686dfd8c3b0f30491ff98c4062d57609.setIcon(icon_71e93ac080a45dfce577cba1721dd0ec);
+            
+    
+            var marker_cb91294ea0a2a56a4084f8fa970937d9 = L.marker(
+                [32.7767, -96.797],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_369c892a4fa3aab2096590bec1cb9087 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c535e985fad4535ef61cb05b283443a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9a162a6b83a72cc65008a69080971dc = $(`<div id="html_f9a162a6b83a72cc65008a69080971dc" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of Dallas</div>`)[0];
+                popup_c535e985fad4535ef61cb05b283443a5.setContent(html_f9a162a6b83a72cc65008a69080971dc);
+            
+        
+
+        marker_cb91294ea0a2a56a4084f8fa970937d9.bindPopup(popup_c535e985fad4535ef61cb05b283443a5)
+        ;
+
+        
+    
+    
+                marker_cb91294ea0a2a56a4084f8fa970937d9.setIcon(icon_369c892a4fa3aab2096590bec1cb9087);
+            
+    
+            var marker_36d4c75b9d0ce69ad7609c731c99a3cc = L.marker(
+                [37.7749, -122.4194],
+                {
+}
+            ).addTo(map_feb28ce240298780bf6f100202899416);
+        
+    
+            var icon_c8bcc533e1fefe7d2cede17e7b880635 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3932b00f40ae7d296e1668e9f7df968d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fffecaba265a44c1aaf1c10e96512c56 = $(`<div id="html_fffecaba265a44c1aaf1c10e96512c56" style="width: 100.0%; height: 100.0%;">Federal Reserve Bank of San Francisco</div>`)[0];
+                popup_3932b00f40ae7d296e1668e9f7df968d.setContent(html_fffecaba265a44c1aaf1c10e96512c56);
+            
+        
+
+        marker_36d4c75b9d0ce69ad7609c731c99a3cc.bindPopup(popup_3932b00f40ae7d296e1668e9f7df968d)
+        ;
+
+        
+    
+    
+                marker_36d4c75b9d0ce69ad7609c731c99a3cc.setIcon(icon_c8bcc533e1fefe7d2cede17e7b880635);
+            
+</script>
+</html>

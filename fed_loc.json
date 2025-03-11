@@ -1,0 +1,53 @@
+{
+  "FRB": [
+    {
+      "name": "Federal Reserve Bank of Boston",
+      "coordinates": [42.3601, -71.0589]
+    },
+    {
+      "name": "Federal Reserve Bank of New York",
+      "coordinates": [40.7128, -74.0060]
+    },
+    {
+      "name": "Federal Reserve Bank of Philadelphia",
+      "coordinates": [39.9526, -75.1652]
+    },
+    {
+      "name": "Federal Reserve Bank of Cleveland",
+      "coordinates": [41.4993, -81.6944]
+    },
+    {
+      "name": "Federal Reserve Bank of Richmond",
+      "coordinates": [37.5407, -77.4360]
+    },
+    {
+      "name": "Federal Reserve Bank of Atlanta",
+      "coordinates": [33.7490, -84.3880]
+    },
+    {
+      "name": "Federal Reserve Bank of Chicago",
+      "coordinates": [41.8781, -87.6298]
+    },
+    {
+      "name": "Federal Reserve Bank of St. Louis",
+      "coordinates": [38.6270, -90.1994]
+    },
+    {
+      "name": "Federal Reserve Bank of Minneapolis",
+      "coordinates": [44.9778, -93.2650]
+    },
+    {
+      "name": "Federal Reserve Bank of Kansas City",
+      "coordinates": [39.0997, -94.5786]
+    },
+    {
+      "name": "Federal Reserve Bank of Dallas",
+      "coordinates": [32.7767, -96.7970]
+    },
+    {
+      "name": "Federal Reserve Bank of San Francisco",
+      "coordinates": [37.7749, -122.4194]
+    }
+  ]
+}
+
